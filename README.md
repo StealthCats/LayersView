@@ -24,3 +24,4 @@ ListView 的多层级适配器，可以无限嵌套。
     protected abstract View getViewByPosition(View convertView, ViewGroup parent,int ... position);
     
     其余的直接看源码吧。图片在下面：
+    ![](https://github.com/RnMonkey/MultiListView/blob/master/1.png )
