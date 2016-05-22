@@ -5,6 +5,12 @@ ListView 的多层级适配器，可以无限嵌套。
 
 实际上使用的还是ListView， 除了需要重写getCountByPostion和getViewByPosition方法，其余使用和正常使用ListView一样。
 
+
+ ![](https://github.com/RnMonkey/MultiListView/blob/master/1.png)  
+ ![](https://github.com/RnMonkey/MultiListView/blob/master/2.png)  
+ ![](https://github.com/RnMonkey/MultiListView/blob/master/3.png)  
+
+
 ```java
 
  /**
@@ -35,7 +41,4 @@ ListView 的多层级适配器，可以无限嵌套。
     
     ```
     
-    其余的直接看源码吧。图片在下面：
-   ![](https://github.com/RnMonkey/MultiListView/blob/master/1.png)  
-   ![](https://github.com/RnMonkey/MultiListView/blob/master/2.png)  
-    ![](https://github.com/RnMonkey/MultiListView/blob/master/3.png)  
+  
