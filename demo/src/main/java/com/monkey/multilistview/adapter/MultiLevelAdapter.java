@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.monkey.multilistview.DataBean;
-import com.monkey.multilistview.adapter.BaseMultiLevelAdapter;
+import com.monkey.adapter.BaseMultiLevelAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public class MultiLevelAdapter extends BaseMultiLevelAdapter {
         initData();
     }
     private void initData() {
-        mRoot = new DataBean("");
+        mRoot = new DataBean("  ");
         createChildrenDataBean(mRoot,0,6);
         Log.d("", "initData: mRoot ="+mRoot);
     }
@@ -37,7 +37,7 @@ public class MultiLevelAdapter extends BaseMultiLevelAdapter {
         DataBean data =null;
         List<DataBean> childrenList = new ArrayList<>();
         for (int i = 0; i < count; i++) {//第一层的数据
-            data = new DataBean("第"+level+"层 第 "+i+"个 ");
+            data = new DataBean("第--"+level+"层 第 "+i+"个 ");
             createChildrenDataBean(data,level+1,count+1);
             childrenList.add(data);
         }
